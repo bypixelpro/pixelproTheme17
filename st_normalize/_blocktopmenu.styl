@@ -1,15 +1,17 @@
 .menu
-  float left
+  //float left
   a, a:visited
     text-decoration none
     color text-color
-    font-size 1.2em
-    padding small-padding
+    font-size 0.8em
+    font-family menu
+    padding 5px 10px 5px 10px
     display block
+    text-transform uppercase;
 
   a:hover, li.current > a
     background-color highlighted-background-color
-    color highlighted-color
+    //color highlighted-color
 
   > ul > li // top level
     display inline-block
@@ -17,7 +19,7 @@
     &:not(:first-child)
       border-left 1px solid #ccc
     > a
-      background-color background-color
+      background-color highlighted-background-color
     > div
       border 1px solid border-color
       display none
@@ -34,3 +36,4 @@
     margin 0
     &[data-depth="0"], &[data-depth="1"]
       padding 0px
+      
